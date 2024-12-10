@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cohen Peters</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 0 1rem;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            border-bottom: 2px solid #333;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 2rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #333;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #007BFF;
+        }
+
+        .page {
+            display: none; 
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+ 
+      
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1rem;
+            border-top: 2px solid #333;
+        }
+
+        footer p {
+            margin-bottom: 1rem;
+            color: gray;
+        }
+
+        footer .socials {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        footer .social-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        footer .social-link img {
+            width: 25px;
+            height: 25px;
+            margin-right: 0.5rem;
+        }
+
+        footer .social-link:hover {
+            color: #0056b3;
+        }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="page-title">Cohen Peters</h1>
+        <nav>
+            <ul>
+                <li><a onclick="showPage('home')">Home</a></li>
+                <li><a onclick="showPage('film')">Film</a></li>
+                <li><a onclick="showPage('digital')">Digital</a></li>
+                <li><a onclick="showPage('video')">Video</a></li>
+                <li><a onclick="showPage('about')">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Page -->
+        <section id="home" class="page active">
+             <section class="gallery">
+            <img src="IMG_0113.JPG" alt="IMG_0113.JPG">
+            <img src="IMG_0118.JPG" alt="IMG_0118.JPG">
+            <img src="IMG_0585.JPG" alt="IMG_0585.JPG">
+            <img src="IMG_1922.JPG" alt="IMG_1922.JPG">
+            <img src="IMG_1924.JPG" alt="IMG_1924.JPG">
+            <img src="digital mol ko half water.JPG" alt="digital mol ko half water.JPG">
+           <img src="digital iz shotgun.JPG" alt="digital iz shotgun.JPG">
+            <img src="film camp dark cal.JPG" alt="film camp dark cal.JPG">
+            <img src="film camp jos saloman.JPG" alt="film camp jos saloman.JPG">
+            <img src="film camp wallpaper.JPG" alt="film camp wallpaper.JPG">
+            <img src="film eric smoke.JPG" alt="film eric smoke.JPG">
+          <img src="film evan skate squam.JPG" alt="film evan skate squam.JPG">
+            <img src="film eg alaxandria.JPG" alt="film eg alaxandria.JPG">
+            <img src="film eg camal and man.JPG" alt="film eg camal and man.JPG">
+           <img src="film eg dad no foc.JPG" alt="film eg dad no foc.JPG">
+            <img src="film eg landscape.JPG" alt="film eg landscape.JPG">
+            <img src="film eg lighting.JPG" alt="film eg lighting.JPG">
+          <img src="film crazy p.JPG" alt="film crazy p.JPG">
+            <img src="film eg alaxandria pirate.JPG" alt="film eg alaxandria pirate.JPG">
+          <img src="film snow flakes.JPG" alt="film snow flakes.JPG">
+          <img src="film mol ko hand head.JPG" alt="spanish banks water">
+          <img src="film evan portrait.JPG" alt="evan portait squam">
+          <img src="film snow timbs.JPG" alt="timbs sledding">
+          <img src="film squam jump skate.JPG" alt="jumping hip in squam">
+
+            </section>
+        </section>
+
+        <!-- Film Page -->
+        <section id="film" class="page">
+            <section class="gallery">
+              <img src="film eg alaxandria pirate.JPG" alt="film eg alaxandria pirate.JPG">
+          <img src="film snow flakes.JPG" alt="film snow flakes.JPG">
+          <img src="film mol ko hand head.JPG" alt="spanish banks water">
+          <img src="film evan portrait.JPG" alt="evan portait squam">
+          <img src="film snow timbs.JPG" alt="timbs sledding">
+          <img src="film squam jump skate.JPG" alt="jumping hip in squam">
+            <img src="IMG_0113.JPG" alt="IMG_0113.JPG">
+            <img src="IMG_0118.JPG" alt="IMG_0118.JPG">
+            <img src="IMG_0585.JPG" alt="IMG_0585.JPG">
+            <img src="IMG_1922.JPG" alt="IMG_1922.JPG">
+            <img src="IMG_1924.JPG" alt="IMG_1924.JPG">
+               <img src="film crazy p.JPG" alt="film crazy p.JPG">
+            <img src="film camp jos saloman.JPG" alt="film camp jos saloman.JPG">
+            <img src="film camp wallpaper.JPG" alt="film camp wallpaper.JPG">
+            <img src="film eric smoke.JPG" alt="film eric smoke.JPG">
+           <img src="film camp jos down.JPG" alt="josiah hiking down mountain">
+            <img src="film eg alaxandria.JPG" alt="film eg alaxandria.JPG">
+            <img src="film eg camal and man.JPG" alt="film eg camal and man.JPG">
+           <img src="film eg dad no foc.JPG" alt="film eg dad no foc.JPG">
+            <img src="film eg landscape.JPG" alt="film eg landscape.JPG">
+            <img src="film eg lighting.JPG" alt="film eg lighting.JPG">
+         <img src="film camp dark cal.JPG" alt="film camp dark cal.JPG">
+            <img src="film squam jump skate.JPG" alt="buddy jumping squam">
+              <img src="film evan skate squam.JPG" alt="film evan skate squam.JPG">
+
+            </section>
+        </section>
+
+        <!-- Digital Page -->
+        <section id="digital" class="page">
+          <section class="gallery">
+            <img src="digital iz shotgun.JPG" alt="izzy shotgun">
+             <img src="digital bike light leak.jpg" alt="digital bike light leak">
+          <img src="digital bike aydon .jpg" alt="digital bike aydon">
+          <img src="digital mol ko half water.JPG" alt="digital molly and kohl">
+          <img src="digital drank.jpeg" alt="digital drank">
+          <img src="digital even more ll.jpg" alt="digital even more light leak">
+          <img src="digital eric mat ayd.jpg" alt="digital eric mat ayd">
+            <img src="digital eric ghost.JPG" alt="digital eric ghost">
+          <img src="digital ghostly julia.jpeg" alt="digital ghostly julia">
+          <img src="digital more light leak.jpg" alt="digital more light leak">
+         </section>
+        </section>
+
+        <!-- Video Page -->
+<section id="video" class="page">
+   <a href="https://www.youtube.com/watch?v=96jWm8JYhRc" target="_blank" class="youtube-link">
+        Click here to watch Coolas Pilot 
+    </a>
+    
+    <div class="video-content">
+        <div class="content-block">
+            <img src="Image.png" alt="screenshot from video" style="width: 50%; height: auto; display: block; margin: 0 auto;">
+            <div class="text-block">
+                <h2>ABOUT COOLAS</h2>
+                <p>
+                   This past summer me and two of my closest 
+friends wanted to showcase what a summer 
+in the most beautiful province in Canada looks 
+like. We decided that a doc showcasing some 
+of our favourite spots in beautiful British 
+Columbia would not only do the trick but also
+give a glimpse into our sick lives. This project 
+gave us an outlet to send it whenever we had
+a chance cause it was for the video. Hopefully 
+the journey doesn’t end here and we can keep
+our lives exciting by keeping Coolas going.
+                </p>
+            </div>
+        </div>
+        <div class="content-block">
+            <img src="Image 2.png" alt="screenshot from video" style="width: 50%; height: auto; display: block; margin: 0 auto;">
+            <div class="text-block">
+                <h2>F*CKING DO IT</h2>
+                <p>
+                    Coolas started like any other project, I wanted
+to do something cool and had an idea of how
+to do it. With this said, 90% of my creative 
+projects crash before they can even take off.
+Even this video wasn’t going to happen if it
+wasn’t for my friends doing sick shit with me.
+Now, this is one of my favourite stories I’ve 
+ever captured. Whether is be photography, 
+videography, or any other medium you can 
+think of, DO IT. At the end of the day, I way 
+rather regret doing something than regret not
+starting it in the first place. 
+                  - Coolas Out
+                </p>
+            </div>
+        </div>
+    </div>
+   
+</section>
+     
+
+
+        <!-- About Me Page -->
+        <section id="about" class="page">       
+              <img src="film about me.heic" alt="portait of me" style="width: 50%; height: auto; display: block; margin: 5 auto;">
+           <div class="text-block">
+                <h2>BIO</h2>
+                <p>
+                   Cohen Peters is a photographer and filmmaker who discovered his love for capturing moments at the age of 15 when he bought his first camera. Starting with film photography, Cohen found storytelling through photos and videos. His keen interest in business and design inspires him to explore creative hybrids between the two fields. Currently, Cohen is pursuing a degree in Global Business and Digital Arts (GBDA) at the University of Waterloo, blending his design skills with a strong foundation in business and technology.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>You can be cautious or you can be creative, but there’s no such thing as a cautious creative. – George Lois</p>
+        <div class="socials">
+            <a href="https://www.instagram.com/cohenpeters/" class="social-link">
+                <img src="instagram.png" alt="Instagram Logo">
+                @cohenpeters
+            </a>
+            <a href="mailto:cohenpeters99@gmail.com" class="social-link">
+                <img src="mail.png" alt="Email Icon">
+                cohenpeters99@gmail.com
+            </a>
+            <a href="https://www.youtube.com/@CoolasEntertainment" class="social-link">
+                <img src="youtube.png" alt="YouTube Logo">
+                @CoolasEntertainment
+            </a>
+        </div>
+        <p>Vancouver, BC / Waterloo, ON</p>
+    </footer>
+ <!-- Decided to use some javascript to make of the pages cleaner, javascripts was done by me -->
+    <script>
+        function showPage(pageId) {
+            document.querySelectorAll('.page').forEach(page => page.classList.remove('active'));
+            document.getElementById(pageId).classList.add('active');
+            const titles = {
+                home: 'Cohen Peters',
+                film: 'FILM',
+                digital: 'DIGITAL',
+                video: 'VIDEO',
+                about: 'About Me'
+            };
+            document.getElementById('page-title').textContent = titles[pageId];
+        }
+    </script>
+</body>
+</html>
